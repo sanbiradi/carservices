@@ -1,0 +1,351 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;  
+    background-size:100% 100%;
+    background: url(file:///C:/Users/Dell/Desktop/paper/background-img.svg) !important;
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Navigation */
+#Home{
+    position: relative;
+    padding-left:0px;
+    padding-right:0px;
+    top: 0px;
+}
+.navbar{
+    color: #a4a4ff;
+    border-radius: 0px;
+   
+} 
+.navbar-brand span{
+    color: red;
+}
+.navbar-brand{
+    color:wheat !important;
+    transition:.5s !important;
+}
+.navbar-brand:hover{
+      background: rgb(19, 231, 115) !important;
+      color: white !important;
+}
+.nav li a{
+      position: relative;
+      display: block;
+      width: 120px;
+      height: 40px;
+      text-align: center;
+      line-height: 2em;
+      color: #262626;
+      text-transform: uppercase;
+      font-family: verdana;
+      letter-spacing: 2px;
+      overflow:hidden;
+      z-index: 1;
+      transition: .5s; 
+}
+.nav li a:hover{
+      color:red !important;
+      font-weight: 27;
+}
+.nav li a:before{
+      content: '';
+      position: absolute;
+      top: 12px;
+      width: 100%;
+      height: 100%;
+      background: white;
+      z-index:-1;
+      transition: .5s;
+}
+.nav li:nth-child(odd) a::before{
+      right: -100%; 
+}
+.nav li:nth-child(even) a::before{
+     left:-100%;
+}
+.nav li:nth-child(odd) a:hover::before{
+      right: 0%;
+}
+.nav li:nth-child(even) a:hover::before{
+    left:0%;
+}
+.nav li:nth-child(7) a{
+    cursor: pointer;
+}
+
+/*end of navigation*/
+/*big slide*/
+/*about*/
+.h3-head{
+    padding: 1em;
+    display: block;
+    text-align: center;
+    color: #262626;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: verdana;    
+    transition:.5s;
+}
+.h3-head:hover{
+    text-shadow: 1px 2px 7px rgb(250, 133, 133);
+}
+.border-left{
+    border-left: 2px solid #dee2e6 !important;
+}
+.p-style{
+    padding-left: 2em;
+    letter-spacing:1.5px;
+    line-height: 1.9;
+    color:#999;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+    font-weight: 500;
+    font-size: 17px;
+}
+.about-left-agile{
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 21px;
+    padding-bottom: 17px;
+    width: 250px;  
+}
+/*Gallery*/
+#Gallery div img{
+ height: 300px;
+ margin-bottom:2em; 
+ border: 1px solid rgb(226, 122, 122);
+border-radius: 15px;
+opacity: 0.9;
+transition:.5s;
+box-shadow: 12px 13px 14px rgb(84, 104, 84);
+}
+#Gallery div img:hover{
+opacity: 1;
+box-shadow: none;
+overflow: hidden;
+transform: scale(1.1);
+}
+
+
+/*Services*/
+#services div{
+    background: #3f51b5;
+    padding: 1em;
+}
+.bottom-w3ls1 h4 {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 21px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+    padding-bottom: 17px;
+    width: 250px;
+    transition: 0.5s all;
+    
+}
+.bottom-w3ls1:hover.bottom-w3ls1 h4 {
+    border-color: #fff;
+    width: 300px;
+    transition: 0.5s all;
+}
+/*team*/
+
+.team-text h4 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 0.3em;
+    letter-spacing: 2px;
+    background: rgba(0, 0, 0, 0.56);
+    padding: 13px 0;
+}
+
+.team-text h5 {
+    font-size: 1em;
+    color: #ffffff;
+    letter-spacing: 1px;
+}
+
+.caption {
+    opacity: 0;
+    top: 0%;
+    position: absolute;
+    width: 89.5%;
+    left: 20px;
+    text-align: center;
+    transition: 0.5s all ease;
+}
+.team-grid{
+    margin-bottom:2em;
+    transition: 0.5s all ease;
+}
+.team-grid:hover 
+{
+    box-shadow: -9px 9px 25px #524f29;   
+}
+.team-grid:hover .caption {
+    display: block;
+    top: 38%;
+    opacity: 1;
+}
+
+.caption ul {
+    padding: 1em 0 .5em;
+}
+
+.caption ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.caption ul li:nth-child(2) {
+    margin: 0 0.3em;
+}
+
+.caption ul li a i {
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    font-size: 18px;
+    line-height: 1.9;
+}
+
+.caption ul li a i:hover {
+    transform: rotateY(360deg);
+    transition: .5s all;
+}
+
+.caption ul li a i.f1 {
+    background: #3b5998;
+}
+
+.caption ul li a i.f2 {
+    background: #00aced;
+}
+
+.caption ul li a i.f3 {
+    background: #F44336;
+}
+/*contact*/
+#contact{
+    background: url(../image/bg11.jpg);
+    height: 800px;
+}
+.contact-div-left
+{
+background: rgba(0, 0, 0, 0.56);
+padding: 3em 2em;
+}
+.contact-div-left input[type="submit"] {
+    background: #f17e7e;
+    padding: 12px 60px;
+    outline: none;
+    margin-top: 1em;
+    color: #fff;
+    border: none;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    transition:.5s;
+}
+.contact-div-left input[type="submit"]:hover {
+    background: green;
+}
+.contact-div-left form .form-group input{
+    transition:.5s;
+    font-weight: bold;
+    background:black;
+    color: white;
+}
+.contact-div-left form .form-group input:focus{
+    border-radius: 5px;
+    background: #f32642;
+}
+
+.contact-div-left form .form-group textarea{
+    transition:.5s;
+    font-weight: bold;
+    background:black;
+    color: white;
+}
+.contact-div-left form .form-group textarea:focus{
+    border-radius: 5px;
+    background: #f32642;
+}
+.contact-div-left input[type="text"], .contact-div-left input[type="email"], .contact-div-left textarea {
+    padding: 11px;
+    border: none;
+    color: #000;
+    outline: none;
+    font-size: 15px;
+    border-radius: 0;
+    background: #fff;
+}
+.contact-div-left textarea {
+    height: 14em;
+    resize: none;
+    width: 100%;
+}
+.text-white
+{
+        color: #ffffff;
+}
+.contact-div-right{
+    background: rgba(0, 0, 0, 0.56);
+    padding: 3em 2em;
+}
+.contact-div-right .container div h4 i{
+    color: red;
+    padding-right: 1em;
+}
+.contact-div-right .container div h4{
+line-height: 3em;
+}
+.contact-div-right .container div:nth-child(3) p{
+    margin-bottom: 2.9em;
+}
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader >.loader img{
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 20000;    
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+.reg{
+    font-family: bell mt;
+}
+.reg h4{
+    transition: .5s;
+}
+.reg h4:hover{
+    border-radius: 20px;
+    padding: 2px;
+    text-decoration: underline;
+    text-decoration-color: red;
+    background: #a4a4ff;
+}
